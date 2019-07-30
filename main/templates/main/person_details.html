@@ -1,0 +1,18 @@
+{% extends "main/header.html" %}
+{% block content %}
+{% csrf_token %}
+<p>Welcome</p>
+<table border="1">
+
+        {% for obj in object %}
+        <tr>
+        <td>{{obj.name}}</td>
+        <td>{{obj.location}}</td>
+          </tr>
+       {% endfor %}
+  
+
+
+</table>
+
+{% endblock %}

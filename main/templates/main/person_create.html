@@ -1,0 +1,8 @@
+{% extends "main/header.html" %}
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+       {{ form.as_p}}
+        <button class="btn" style="background-color:yellowgreen; color:blue;" type="submit"> ADD </button>
+    </form>
+{% endblock %}
